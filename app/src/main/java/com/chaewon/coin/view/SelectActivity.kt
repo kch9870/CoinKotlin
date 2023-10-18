@@ -1,13 +1,13 @@
-package com.bokchi.coco.view
+package com.chaewon.coin.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bokchi.coco.R
-import com.bokchi.coco.databinding.ActivitySelectBinding
-import com.bokchi.coco.view.adapter.SelectRVAdapter
+import com.chaewon.coin.R
+import com.chaewon.coin.databinding.ActivitySelectBinding
+import com.chaewon.coin.view.adapter.SelectRVAdapter
 import timber.log.Timber
 
 // https://apidocs.bithumb.com/reference/%ED%98%84%EC%9E%AC%EA%B0%80-%EC%A0%95%EB%B3%B4-%EC%A1%B0%ED%9A%8C-all

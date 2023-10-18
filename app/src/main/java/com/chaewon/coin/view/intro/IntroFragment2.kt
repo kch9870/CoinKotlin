@@ -1,4 +1,4 @@
-package com.bokchi.coco.view.intro
+package com.chaewon.coin.view.intro
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bokchi.coco.databinding.FragmentIntro2Binding
-import com.bokchi.coco.view.SelectActivity
+import com.chaewon.coin.databinding.FragmentIntro2Binding
+import com.chaewon.coin.view.SelectActivity
 
 class IntroFragment2 : Fragment() {
 

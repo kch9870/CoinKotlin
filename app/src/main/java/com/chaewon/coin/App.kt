@@ -1,4 +1,4 @@
-package com.bokchi.coco
+package com.chaewon.coin
 
 import android.app.Application
 import timber.log.Timber

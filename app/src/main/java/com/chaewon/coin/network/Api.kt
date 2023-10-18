@@ -1,6 +1,6 @@
-package com.bokchi.coco.network
+package com.chaewon.coin.network
 
-import com.bokchi.coco.network.model.CurrentPriceList
+import com.chaewon.coin.network.model.CurrentPriceList
 import retrofit2.http.GET
 
 interface Api {

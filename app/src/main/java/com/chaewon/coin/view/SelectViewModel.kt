@@ -1,12 +1,12 @@
-package com.bokchi.coco.view
+package com.chaewon.coin.view
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.bokchi.coco.dataModel.CurrentPrice
-import com.bokchi.coco.dataModel.CurrentPriceResult
-import com.bokchi.coco.repository.NetWorkRepository
+import com.chaewon.coin.dataModel.CurrentPrice
+import com.chaewon.coin.dataModel.CurrentPriceResult
+import com.chaewon.coin.repository.NetWorkRepository
 import com.google.gson.Gson
 import kotlinx.coroutines.launch
 import timber.log.Timber

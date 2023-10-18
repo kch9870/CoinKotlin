@@ -1,4 +1,4 @@
-package com.bokchi.coco.dataModel
+package com.chaewon.coin.dataModel
 
 data class CurrentPriceResult (
     val coinName : String,

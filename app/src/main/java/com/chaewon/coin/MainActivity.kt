@@ -1,4 +1,4 @@
-package com.bokchi.coco
+package com.chaewon.coin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.bokchi.coco'
+    namespace 'com.chaewon.coin'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.bokchi.coco"
+        applicationId "com.chaewon.coin"
         minSdk 21
         targetSdk 32
         versionCode 1

@@ -1,4 +1,4 @@
-package com.bokchi.coco.view.intro
+package com.chaewon.coin.view.intro
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import com.bokchi.coco.R
-import com.bokchi.coco.databinding.FragmentIntro1Binding
+import com.chaewon.coin.R
+import com.chaewon.coin.databinding.FragmentIntro1Binding
 
 // findViewById -> ViewBinding
 

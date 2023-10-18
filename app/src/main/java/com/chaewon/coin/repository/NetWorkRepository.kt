@@ -1,7 +1,7 @@
-package com.bokchi.coco.repository
+package com.chaewon.coin.repository
 
-import com.bokchi.coco.network.Api
-import com.bokchi.coco.network.RetrofitInstance
+import com.chaewon.coin.network.Api
+import com.chaewon.coin.network.RetrofitInstance
 
 class NetWorkRepository {
 

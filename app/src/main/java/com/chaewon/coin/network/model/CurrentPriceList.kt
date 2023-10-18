@@ -1,4 +1,4 @@
-package com.bokchi.coco.network.model
+package com.chaewon.coin.network.model
 
 data class CurrentPriceList (
 

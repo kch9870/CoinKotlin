@@ -1,4 +1,4 @@
-package com.bokchi.coco.network
+package com.chaewon.coin.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

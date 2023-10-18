@@ -1,4 +1,4 @@
-package com.bokchi.coco.view.adapter
+package com.chaewon.coin.view.adapter
 
 import android.content.Context
 import android.graphics.Color
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bokchi.coco.R
-import com.bokchi.coco.dataModel.CurrentPriceResult
+import com.chaewon.coin.R
+import com.chaewon.coin.dataModel.CurrentPriceResult
 import timber.log.Timber
 
 class SelectRVAdapter(val context : Context, val coinPriceList : List<CurrentPriceResult>)

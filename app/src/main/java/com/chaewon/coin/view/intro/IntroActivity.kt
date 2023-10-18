@@ -1,9 +1,9 @@
-package com.bokchi.coco.view.intro
+package com.chaewon.coin.view.intro
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.bokchi.coco.R
+import com.chaewon.coin.R
 import timber.log.Timber
 
 // Splash 화면 만들기
