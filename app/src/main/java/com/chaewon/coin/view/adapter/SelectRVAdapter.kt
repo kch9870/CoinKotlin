@@ -67,6 +67,7 @@ class SelectRVAdapter(val context : Context, val coinPriceList : List<CurrentPri
                 // 포함하지 않으면
                 selectedCoinList.add(currentCoin)
                 likeImage.setImageResource(R.drawable.like_red)
+
             }
 
             Timber.d(selectedCoinList.toString())

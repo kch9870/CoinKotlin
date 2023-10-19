@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.chaewon.coin.dataModel.CurrentPrice
 import com.chaewon.coin.dataModel.CurrentPriceResult
+import com.chaewon.coin.datastore.MyDataStore
 import com.chaewon.coin.repository.NetWorkRepository
 import com.google.gson.Gson
 import kotlinx.coroutines.launch
@@ -15,20 +16,24 @@ class SelectViewModel : ViewModel() {
 
     private val netWorkRepository = NetWorkRepository()
 
-    private lateinit var currentPriceResultList : ArrayList<CurrentPriceResult>
+    private lateinit var currentPriceResultList: ArrayList<CurrentPriceResult>
 
     // 데이터변화를 관찰 LiveData
     private val _currentPriceResult = MutableLiveData<List<CurrentPriceResult>>()
-    val currentPriceResult : LiveData<List<CurrentPriceResult>>
+    val currentPriceResult: LiveData<List<CurrentPriceResult>>
         get() = _currentPriceResult
 
+    /**
+     * 코인 리스트 가져오기
+     *
+     */
     fun getCurrentCoinList() = viewModelScope.launch {
 
         val result = netWorkRepository.getCurrentCoinList()
 
         currentPriceResultList = ArrayList()
 
-        for(coin in result.data) {
+        for (coin in result.data) {
 
             try {
                 val gson = Gson()
@@ -39,7 +44,7 @@ class SelectViewModel : ViewModel() {
 
                 currentPriceResultList.add(currentPriceResult)
 
-            }catch (e : java.lang.Exception) {
+            } catch (e: java.lang.Exception) {
                 Timber.d(e.toString())
             }
 
@@ -47,6 +52,13 @@ class SelectViewModel : ViewModel() {
 
         _currentPriceResult.value = currentPriceResultList
 
+    }
+
+    /**
+     * 처음 앱 접속 여부 셋팅
+     */
+    fun setUpFirstFlag() = viewModelScope.launch {
+        MyDataStore().setupFirstData()
     }
 
 }

@@ -1,11 +1,12 @@
 package com.chaewon.coin.view
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.chaewon.coin.R
+import com.chaewon.coin.MainActivity
 import com.chaewon.coin.databinding.ActivitySelectBinding
 import com.chaewon.coin.view.adapter.SelectRVAdapter
 import timber.log.Timber
@@ -14,10 +15,9 @@ import timber.log.Timber
 
 class SelectActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivitySelectBinding
+    private lateinit var binding: ActivitySelectBinding
 
-    private val viewModel : SelectViewModel by viewModels()
-    // FAQ
+    private val viewModel: SelectViewModel by viewModels()
 
     private lateinit var selectRVAdapter: SelectRVAdapter
 
@@ -38,5 +38,11 @@ class SelectActivity : AppCompatActivity() {
             Timber.d(it.toString())
         })
 
+        viewModel.setUpFirstFlag()
+
+        binding.laterTextArea.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
